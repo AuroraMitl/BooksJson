@@ -1,0 +1,28 @@
+{
+  "listOfNumbers":[1,5,89,101,56,89],
+    "booksShop": "BooksShop",
+    "writer": "20.05.2016",
+
+    "writers": [{
+            "writerName": "John Ronald Reuel Tolkien",
+            "book": "The Lord of the Rings",
+            "price": "450"
+           
+        }, {
+            "writerName": "Agatha Christie",
+            "book": " Death on the Nile",
+            "price": "350"
+        }, {
+            "writerName": "Rosa Luxemburg",
+            "book": "Theory & Practice",
+            "price": "550"
+        }, {
+           "writerName": "Alexandra Kollontai",
+            "book": "New Woman",
+            "price": "560"
+        }
+    ]
+    
+}
+
+
