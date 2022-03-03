@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class JsonParser {
 
     public Root parse() throws IOException {
-
+        int addition = 100500;
         Root root = new Root();
         JSONParser parser = new JSONParser();
 
@@ -27,15 +27,20 @@ public class JsonParser {
 
                 String booksShop = (String) rootJsonObject.get("booksShop");
                 List<Writers> writers = (List<Writers>) rootJsonObject.get("writers");
-                List<Integer> numbers = (List<Integer>) rootJsonObject.get("listOfNumbers");
+                List<Long> numbers = (List<Long>) rootJsonObject.get("listOfNumbers");
 
                 root.setBooksShop(booksShop);
                 root.setWriters(writers);
                 root.setListOfNumbers(numbers);
 
-                Stream.builder().add(writers).add(booksShop).add(numbers).
+                Stream.builder().add(writers).add(booksShop).
                         build().
                         forEach(s -> System.out.println("StreamAPI: " + s));
+
+                numbers.stream().
+                        map(x->x+addition).
+                        forEach(s -> System.out.println("StreamAPI numbers: " + s));
+
                 return root;
 
 
@@ -44,7 +49,10 @@ public class JsonParser {
             }
         return null;
         }
-    }
+
+     }
+
+
 
 
 

@@ -5,7 +5,7 @@ import java.util.List;
 public class Root {
     private String booksShop;
     private List<Writers> writers;
-    private List<Integer> listOfNumbers;
+    private List<Long> listOfNumbers;
 
     public String getBooksShop(String booksShop){
         return booksShop;
@@ -15,7 +15,11 @@ public class Root {
         return writers;
     }
 
-    public  void setListOfNumbers(List<Integer> listOfNumbers){
+    public List<Long> getListOfNumbers(){
+        return listOfNumbers;
+    }
+
+    public  void setListOfNumbers(List<Long> listOfNumbers){
         this.listOfNumbers = listOfNumbers;
     }
 

@@ -7,5 +7,8 @@ public class Main {
        JsonParser parser = new JsonParser();
        Root root = parser.parse();
        System.out.println("model.Root " + root.toString());
+
+
+
     }
 }
